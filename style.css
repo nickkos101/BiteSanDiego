@@ -1,0 +1,104 @@
+/*
+Theme Name: Blank
+Theme URI: http://inspyregroup.com
+Description: A Modular Theme.
+Author: Nicholas Koskowski, Inspyre Group
+Version: 1.0
+Tags: awesome
+*/
+
+/* Systemic */
+
+body {background-image: url('images/bg_squash.jpg'); min-height:1400px; background-size:cover; background-origin: center center; background-repeat: no-repeat; color: #989898; font-family: 'Roboto', sans-serif;}
+a {text-decoration: none; color: #4eadd5;}
+
+h1,h2,h3,h4,h5,h6 {font-family: 'Roboto', sans-serif; margin:0px; font-weight: normal;}
+
+h1 {font-size: 24px; letter-spacing: -1px;}
+h2 {font-size: 18px; text-transform: uppercase;}
+h3 {font-size: 28px;}
+h4 {}
+h5 {}
+h6 {}
+
+p,li,label,input,select,button {font-size: 16px;}
+p {line-height:24px;}
+
+strong {font-weight: bold; color: #4eadd5;}
+
+
+.container {max-width: 918px; margin: 0 auto;}
+.box {border-radius:8px; background-color: #e5e5e5; padding:7px; margin-top: 100px;}
+.spacer {padding: 0px 10px;}
+
+.box-spacer {padding:25px;}
+.blue-grad .box-spacer {padding:0px 25px;}
+
+.gradient {
+	border:1px solid #c7c7c7;
+	background: rgb(229,229,229);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U1ZTVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(229,229,229,1) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(229,229,229,1)), color-stop(100%,rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#ffffff',GradientType=0 );
+}
+
+.blue-grad {
+	color:#fff;
+	background: rgb(0,183,234);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwYjdlYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDllYzMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(0,183,234,1) 0%, rgba(0,158,195,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,183,234,1)), color-stop(100%,rgba(0,158,195,1)));
+	background: -webkit-linear-gradient(top,  rgba(0,183,234,1) 0%,rgba(0,158,195,1) 100%);
+	background: -o-linear-gradient(top,  rgba(0,183,234,1) 0%,rgba(0,158,195,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(0,183,234,1) 0%,rgba(0,158,195,1) 100%);
+	background: linear-gradient(to bottom,  rgba(0,183,234,1) 0%,rgba(0,158,195,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 );
+}
+
+header nav {font-size: 14px; font-family:Tahoma, Geneva, sans-serif;}
+header nav ul {padding:0px;}
+header nav ul li {display: inline-block; font-weight: bold; margin:0px 5px; background-color: #e2e2e2; padding:10px 15px; border-radius:8px;}
+header nav ul li:first-of-type {margin-left:0px;}
+header nav ul li:last-of-type {margin-right:0px;}
+header nav ul li a {color: #8a8a8a;}
+header nav {border-bottom:3px dashed #8a8a8a; margin-left:45px;}
+
+header .tickets {padding-top: 15px; letter-spacing: -1px; color: #989898; font-weight: 300;}
+header .tickets img {vertical-align: middle; margin-right: 65px; margin-top: -15px;}
+header .tickets span {color:#4eadd5;}
+
+.cascade {font-weight: bold; padding:15px 15px; color: #989898; line-height:32px; }
+.cascade span {padding-left:25px;}
+.cascade i {color:#4eadd5; font-style: normal;}
+
+.icon {vertical-align: middle; margin-right: 20px;}
+
+.boast {font-size: 18px;}
+.boast strong {font-size:24px; padding-right:10px; text-transform: uppercase; letter-spacing: -1px;}
+
+.links {border-top:1px solid #c7c7c7; margin-top: 10px; padding-top:10px; text-align: center;}
+.links .third {border-right:1px solid #c7c7c7; padding-top:25px; padding-bottom:20px; height: 140px;}
+.links .third:last-of-type {border-right:none;}
+.links img {vertical-align: middle;}
+.links .alignleft {padding-right:15px;}
+.links .alignright {padding-left:10px; margin-top:15px;}
+.links h3 {text-transform: uppercase; font-size:18px; font-weight: 300; line-height:32px;}
+.links h3 strong {font-size: 32px;}
+
+.moniker {vertical-align: middle; margin:0px;}
+.blue-grad .ticket {margin: -25px 0px;}
+.blue-grad p {font-weight: 300; font-size:22px; letter-spacing:2px; margin:5px 0px; padding:0px;}
+.phone {margin:0px 25px;}
+
+footer {background-color: #000; color: #fff; padding:20px 0px; margin-top: 45px;}
+footer nav {display: block; width: 100%; text-align: center; margin:25px 0px;}
+footer nav ul {padding:0px;}
+footer nav ul li {display: inline-block; vertical-align:top; padding:5px 25px;}
+
+footer p {font-size: 12px; line-height: 17px;}
+footer .two-thirds {padding-top:15px;}
