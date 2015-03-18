@@ -1,6 +1,6 @@
 /*
-Theme Name: Blank
-Theme URI: http://inspyregroup.com
+Theme Name: Bite San Diego
+Theme URI: http://bitesandiego.com
 Description: A Modular Theme.
 Author: Nicholas Koskowski, Inspyre Group
 Version: 1.0
@@ -9,29 +9,37 @@ Tags: awesome
 
 /* Systemic */
 
-body {background-image: url('images/bg_squash.jpg'); min-height:1400px; background-size:cover; background-origin: center center; background-repeat: no-repeat; color: #989898; font-family: 'Roboto', sans-serif;}
+body {background-image: url('images/bg_squash.jpg'); min-height:800px; background-size:cover; background-origin: center center; background-repeat: no-repeat; color: #989898; font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; background-attachment: fixed;}
 a {text-decoration: none; color: #4eadd5;}
+
+img {max-width: 100%;}
 
 h1,h2,h3,h4,h5,h6 {font-family: 'Roboto', sans-serif; margin:0px; font-weight: normal;}
 
 h1 {font-size: 24px; letter-spacing: -1px;}
 h2 {font-size: 18px; text-transform: uppercase;}
 h3 {font-size: 28px;}
-h4 {}
-h5 {}
-h6 {}
+h4 {font-size: 18px;}
+h5 {font-size: 16px;}
+h6 {font-size: 14px;}
 
-p,li,label,input,select,button {font-size: 16px;}
+p,li,label,input,select,button,table {font-size: 16px;}
 p {line-height:24px;}
 
 strong {font-weight: bold; color: #4eadd5;}
+
+input[type=text],input[type=password],input[type=email],input[type=number],textarea,select {font-size: 14px; border:1px solid #c7c7c7; padding:5px 15px; resize:none;}
+.btn,button,input[type=submit] {border-radius:8px; color:#fff; background-color:#4eadd5; border:none; padding:10px 45px; display: inline-block;}
+.ui-datepicker * {font-size: 14px;}
 
 
 .container {max-width: 918px; margin: 0 auto;}
 .box {border-radius:8px; background-color: #e5e5e5; padding:7px; margin-top: 100px;}
 .spacer {padding: 0px 10px;}
 
-.box-spacer {padding:25px;}
+.box-spacer {padding:15px 25px; -webkit-box-shadow: inset 0px 0px 22px 0px rgba(50, 50, 50, 0.15);
+  -moz-box-shadow: inset 0px 0px 22px 0px rgba(50, 50, 50, 0.15);
+  box-shadow: inset 0px 0px 22px 0px rgba(50, 50, 50, 0.15);}
 .blue-grad .box-spacer {padding:0px 25px;}
 
 .gradient {
@@ -60,26 +68,59 @@ strong {font-weight: bold; color: #4eadd5;}
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 );
 }
 
-header nav {font-size: 14px; font-family:Tahoma, Geneva, sans-serif;}
-header nav ul {padding:0px;}
-header nav ul li {display: inline-block; font-weight: bold; margin:0px 5px; background-color: #e2e2e2; padding:10px 15px; border-radius:8px;}
+.dark-gray-grad {
+background: rgb(238,238,238);
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZWVlZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(238,238,238,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(238,238,238,1)));
+background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(238,238,238,1) 100%);
+background: -o-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(238,238,238,1) 100%);
+background: -ms-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(238,238,238,1) 100%);
+background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(238,238,238,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 );
+}
+
+.dark-gray-grad.spacer {padding:20px; border:1px solid #c7c7c7; color: #393939; border-radius:4px;}
+.dark-gray-grad h3 {font-size: 22px; color: #4eadd5; font-weight: bold; padding-bottom: 20px;}
+.dark-gray-grad ul {}
+
+header {padding-bottom:25px;}
+header nav {font-size: 14px; font-family:Tahoma, Geneva, sans-serif; border-bottom:2px dotted #8a8a8a; margin-left:45px;}
+header nav ul {padding:0px; margin-top:0px;}
+header nav ul li {display: inline-block; position: relative; font-weight: bold; margin:0px 5px; background-color: #e2e2e2; padding:10px 15px; border-radius:8px;}
 header nav ul li:first-of-type {margin-left:0px;}
 header nav ul li:last-of-type {margin-right:0px;}
 header nav ul li a {color: #8a8a8a;}
-header nav {border-bottom:3px dashed #8a8a8a; margin-left:45px;}
+header nav ul li ul {display: none; position: absolute; top:100%;}
+header nav ul li:hover ul {display: block; margin-left:-20px;}
+header nav ul li ul li {display: block; background-color: #eee; border:1px solid #c7c7c7; min-width:220px; margin-top::2px; margin-bottom: 2px; font-size: 14px;}
+header nav ul li ul li:first-of-type {margin-left:5px;}
+header nav ul li ul li:last-of-type {margin-right: 5px;}
 
 header .tickets {padding-top: 15px; letter-spacing: -1px; color: #989898; font-weight: 300;}
-header .tickets img {vertical-align: middle; margin-right: 65px; margin-top: -15px;}
+header .tickets img {vertical-align: middle; margin-right: 115px; margin-top: -15px;}
 header .tickets span {color:#4eadd5;}
+header .tickets a {color: inherit;}
+
+header.resp-menu {display:none; position: fixed; top:0px; left:0px; width: 100%;}
+header.resp-menu i {font-size: 24px; color: pointer;}
+header.resp-menu nav {display: block; width: 100%; margin:0px; display: none;}
+header.resp-menu nav ul {padding:0px;}
+header.resp-menu nav ul li {background-color: transparent; color:#fff; display: block; padding:0px !important; margin:0px !important;}
+header.resp-menu nav ul li a {color: #fff;}
+header.resp-menu nav ul li ul {display: block; position: relative; padding-left:25px;}
+header.resp-menu nav ul li ul li { border:none; }
+header.resp-menu nav ul li:hover ul {margin: 0px;}
 
 .cascade {font-weight: bold; padding:15px 15px; color: #989898; line-height:32px; }
 .cascade span {padding-left:25px;}
-.cascade i {color:#4eadd5; font-style: normal;}
+.cascade i {color:#4eadd5; font-style: normal; font-family: 'Dancing Script', cursive; font-size:28px; letter-spacing:2px;}
 
 .icon {vertical-align: middle; margin-right: 20px;}
 
 .boast {font-size: 18px;}
-.boast strong {font-size:24px; padding-right:10px; text-transform: uppercase; letter-spacing: -1px;}
+.boast a {color: inherit;}
+.boast strong {padding-right:10px; text-transform: uppercase;}
 
 .links {border-top:1px solid #c7c7c7; margin-top: 10px; padding-top:10px; text-align: center;}
 .links .third {border-right:1px solid #c7c7c7; padding-top:25px; padding-bottom:20px; height: 140px;}
@@ -88,17 +129,57 @@ header .tickets span {color:#4eadd5;}
 .links .alignleft {padding-right:15px;}
 .links .alignright {padding-left:10px; margin-top:15px;}
 .links h3 {text-transform: uppercase; font-size:18px; font-weight: 300; line-height:32px;}
-.links h3 strong {font-size: 32px;}
+.links h3 strong {font-size: 32px; font-weight: normal;}
+.links a {color: inherit;}
+
+.gma {padding-right: 15px; padding-bottom: 20px; padding-top: 13px;}
+.gma-text {line-height:25px !important;}
+.gma-text strong {padding-bottom:5px; margin:0px; display: block;}
 
 .moniker {vertical-align: middle; margin:0px;}
 .blue-grad .ticket {margin: -25px 0px;}
-.blue-grad p {font-weight: 300; font-size:22px; letter-spacing:2px; margin:5px 0px; padding:0px;}
+.blue-grad p {font-weight: 300; font-size:18px; letter-spacing:2px; margin:5px 0px; padding:0px;}
+.blue-grad a {color:inherit; }
 .phone {margin:0px 25px;}
 
 footer {background-color: #000; color: #fff; padding:20px 0px; margin-top: 45px;}
-footer nav {display: block; width: 100%; text-align: center; margin:25px 0px;}
+footer nav {display: block; width: 100%; text-align: center;}
 footer nav ul {padding:0px;}
 footer nav ul li {display: inline-block; vertical-align:top; padding:5px 25px;}
 
+.social-media i,.social-media img {font-size: 24px; color: #fff; margin:0px 5px;}
+.social-media a {color:#fff;}
+
 footer p {font-size: 12px; line-height: 17px;}
 footer .two-thirds {padding-top:15px;}
+
+/* Page */
+.content {color: #393939; font-size: 16px; line-height:24px;}
+.content h1 {text-transform: uppercase; font-weight: 300; letter-spacing: -1px; margin-bottom:10px;}
+.content h2 {font-weight: bold; color: #4eadd5; text-transform: uppercase; padding-top:10px;}
+.content p {font-size: 16px;}
+
+/* Press */
+.press .spacer {padding:10px;}
+.press-box {border:1px solid #c7c7c7; background-color: #fff; padding:55px 25px; min-height:170px;}
+
+/* FAQ */
+
+.faq {padding:10px 15px; background-color: #fff; border:1px solid #c7c7c7; margin:10px 0px; cursor: pointer;}
+.question {text-align: left; color: #4eadd5;}
+.answer {text-align: left; font-size: 12px; color: #393939; display: none;}
+
+.post {margin:25px 0px; overflow: hidden;}
+
+.widget {padding:0px 15px; padding-left: 35px;}
+.widget h3 {font-size: 22px; padding:20px 0px; padding-bottom:10px; font-weight: 300;}
+.widget ul {padding:0px; list-style-position: inside;}
+
+.resturaunts li {padding:5px 0px; line-height:34px; }
+.resturaunts strong {color:#393939; font-family:'Roboto', sans-serif;}
+.resturaunts  a, .resturaunts a strong {color:#4eadd5 !important;}
+
+.gallery {text-align: center;}
+.thumb {max-width:90px; margin:15px; vertical-align: middle; cursor: pointer;}
+#TB_window {font-size: 14px;}
+.screen-reader-text {font-size: 0px;}
